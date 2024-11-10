@@ -29,3 +29,4 @@ document.getElementById('submit-interests-btn').addEventListener('click', functi
         alert("Please select at least one interest.");
     }
 });
+

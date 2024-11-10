@@ -8,7 +8,7 @@
 /* Body and Page Layout */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #faf0e6; /* Light tan background, less white but warm */
+    background-color: #faf0e6; /* Light tan background */
     color: #3e2b2b;  /* Dark coffee color for text */
     text-align: center;
     background-image: url('https://www.transparenttextures.com/patterns/coarse-grain.png'); /* Optional subtle texture */
@@ -19,12 +19,20 @@ header {
     background-color: #8e6e53; /* Rich coffee brown */
     color: white;
     padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+header .logo {
+    width: 50px;
+    height: auto;
 }
 
 header h1 {
     font-size: 3rem;
     font-family: 'Georgia', serif;
-    margin-bottom: 10px;
 }
 
 header p {
@@ -56,7 +64,6 @@ header p {
 
 h2 {
     color: #5f4b3b; /* Coffee bean brown */
-    font-family: 'Georgia', serif;  /* Elegant, sophisticated font */
 }
 
 /* Buttons */
@@ -99,14 +106,9 @@ button:hover {
 
 .interest-options label {
     font-size: 1rem;
-    color: #3e2b2b;  /* Dark coffee color for text */
+    color: #3e2b2b;
     display: block;
     margin-bottom: 10px;
-    font-family: 'Arial', sans-serif;
-}
-
-input[type="checkbox"] {
-    margin-right: 10px;
 }
 
 /* Matches Section */
@@ -134,19 +136,29 @@ input[type="checkbox"] {
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.match-card img.profile-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .match-card p {
     font-size: 1.1rem;
     margin-bottom: 10px;
-    color: #5f4b3b;  /* Dark coffee brown text */
+    color: #5f4b3b; /* Dark coffee brown text */
 }
 
 .time-slots label {
     display: block;
     font-size: 1rem;
     margin-bottom: 5px;
-    color: #3e2b2b; /* Match with overall coffee theme */
+    color: #3e2b2b;
 }
 
 /* Footer Styling */
@@ -166,7 +178,7 @@ button, .match-card {
 
 /* Hover Effects for Cards */
 .match-card:hover {
-    background-color: #f0e5d8;  /* Soft hover effect for cards */
+    background-color: #f0e5d8;
     transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
@@ -174,4 +186,8 @@ button, .match-card {
 /* Style for the checkbox inputs */
 input[type="checkbox"] {
     margin-right: 10px;
+}
+
+.select-interests-header {
+    margin-bottom: 20px;
 }
