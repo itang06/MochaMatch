@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MochaMatch - Mentor/Mentee Match</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Website Header -->
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="MochaMatch Logo" class="logo">
+            <h1>MochaMatch</h1>
+            <p>Your Coffee-Fueled Mentor/Mentee Match</p>
+        </div>
+    </header>
+
+    <!-- Popup for Mentor/Mentee Selection -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Would you like to be a Mentor or Mentee?</h2>
+            <button id="mentor-btn">Mentor</button>
+            <button id="mentee-btn">Mentee</button>
+        </div>
+    </div>
+
+    <!-- Interests Selection Form -->
+    <div id="interests-section" class="interests-section hidden">
+        <h2 class="select-interests-header">Select Your Interests!</h2>
+        <div class="interest-options">
+            <label><input type="checkbox" value="Programming"> Programming</label>
+            <label><input type="checkbox" value="Design"> Design</label>
+            <label><input type="checkbox" value="Marketing"> Marketing</label>
+            <label><input type="checkbox" value="Business"> Business</label>
+            <label><input type="checkbox" value="Data Science"> Data Science</label>
+        </div>
+        <button id="submit-interests-btn">Find Matches</button>
+    </div>
+
+    <!-- Matches Section -->
+    <div id="matches-section" class="matches-section hidden">
+        <h2 class="select-interests-header">People with Similar Interests!</h2>
+        <div class="match-list">
+            <div class="match-card">
+                <img src="../assets/john_doe.jpg" alt="John Doe" class="profile-photo">
+                <p>Name: John Doe</p>
+                <p>Interests: Programming, Data Science</p>
+                <div class="time-slots">
+                    <label><input type="checkbox"> 10:00 AM</label>
+                    <label><input type="checkbox"> 02:00 PM</label>
+                </div>
+            </div>
+            <div class="match-card">
+                <img src="../assets/jane_smith.jpg" alt="Jane Smith" class="profile-photo">
+                <p>Name: Jane Smith</p>
+                <p>Interests: Design, Marketing</p>
+                <div class="time-slots">
+                    <label><input type="checkbox"> 11:00 AM</label>
+                    <label><input type="checkbox"> 03:00 PM</label>
+                </div>
+            </div>
+            <div class="match-card">
+                <img src="../assets/Michael_Brown.png" alt="Michael Brown" class="profile-photo">
+                <p>Name: Michael Brown</p>
+                <p>Interests: Business, Marketing</p>
+                <div class="time-slots">
+                    <label><input type="checkbox"> 09:00 AM</label>
+                    <label><input type="checkbox"> 01:00 PM</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MochaMatch. All rights reserved.</p>
+    </footer>
+
+    <script src="../backend/script.js"></script>
+</body>
+</html>
