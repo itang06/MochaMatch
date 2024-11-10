@@ -193,3 +193,40 @@ input[type="checkbox"] {
 .select-interests-header {
     margin-bottom: 20px;
 }
+/* Progress Bar Container */
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 20px; /* Adjust to position it below other content */
+}
+
+/* Progress Bar Fill */
+.progress-bar-fill {
+    height: 100%;
+    width: 0%; /* Start with 0% */
+    background-color: #d4af37; /* Coffee color */
+    position: relative;
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+/* Progress Head (Logo) */
+.progress-head {
+    position: absolute;
+    top: -10px; /* Adjust as needed to align properly */
+    right: 0;
+    width: 40px; /* Initial size of the logo */
+    height: 40px;
+    background-image: url('../assets/thumbnail_logo.png'); /* Logo image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* Circular shape */
+    transition: width 0.3s ease, height 0.3s ease; /* Smooth scaling */
+}
+
+
+.book-button {
+    margin-left: auto;
+}

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MochaMatch - Mentor/Mentee Match</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Website Header -->
     <header>
@@ -50,6 +52,7 @@
                     <label><input type="checkbox"> 10:00 AM</label>
                     <label><input type="checkbox"> 02:00 PM</label>
                 </div>
+                <button class="book-button">Book</button>
             </div>
             <div class="match-card">
                 <img src="../assets/jane_smith.jpg" alt="Jane Smith" class="profile-photo">
@@ -59,6 +62,7 @@
                     <label><input type="checkbox"> 11:00 AM</label>
                     <label><input type="checkbox"> 03:00 PM</label>
                 </div>
+                <button class="book-button">Book</button>
             </div>
             <div class="match-card">
                 <img src="../assets/Michael_Brown.png" alt="Michael Brown" class="profile-photo">
@@ -68,6 +72,7 @@
                     <label><input type="checkbox"> 09:00 AM</label>
                     <label><input type="checkbox"> 01:00 PM</label>
                 </div>
+                <button class="book-button">Book</button>
             </div>
         </div>
     </div>
@@ -75,7 +80,15 @@
     <footer>
         <p>&copy; 2024 MochaMatch. All rights reserved.</p>
     </footer>
-
+    <!-- progress bar-->
+    <div class="progress-container">
+        <div class="progress-bar-fill" id="progress-bar-fill">
+            <div class="progress-head" id="progress-head"></div>
+        </div>
+    </div>
+    
     <script src="../backend/script.js"></script>
+
 </body>
+
 </html>

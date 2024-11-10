@@ -30,3 +30,26 @@ document.getElementById('submit-interests-btn').addEventListener('click', functi
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    let progress = 0;
+    const progressBarFill = document.getElementById('progress-bar-fill');
+    const progressHead = document.getElementById('progress-head');
+
+    function updateProgress() {
+        if (progress < 100) {
+            progress += 20; // Increment progress by 20% with each booking
+            progressBarFill.style.width = progress + '%';
+
+            // Increase the size of the logo as progress increases
+            const newSize = 40 + (progress * 0.3); // Adjust the scaling factor
+            progressHead.style.width = `${newSize}px`;
+            progressHead.style.height = `${newSize}px`;
+        }
+    }
+
+    // Attach event listener to each "Book" button
+    document.querySelectorAll('.book-button').forEach(button => {
+        button.addEventListener('click', updateProgress);
+    });
+});
+
