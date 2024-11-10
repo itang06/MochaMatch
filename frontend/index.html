@@ -3,51 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MochaMatch - Coffee Chat Scheduler</title>
+    <title>MochaMatch - Mentor/Mentee Match</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to MochaMatch</h1>
-        <p>Schedule a coffee chat with your peers and get productive together!</p>
-    </header>
+    <!-- Popup for Mentor/Mentee Selection -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Would you like to be a Mentor or Mentee?</h2>
+            <button id="mentor-btn">Mentor</button>
+            <button id="mentee-btn">Mentee</button>
+        </div>
+    </div>
 
-    <main>
-        <div class="coffee-cup"></div>
-        
-        <section class="form-section">
-            <h2>Schedule Your Coffee Chat</h2>
-            <form id="coffee-form">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <!-- Interests Selection Form -->
+    <div id="interests-section" class="interests-section hidden">
+        <h2>Select Your Interests</h2>
+        <div class="interest-options">
+            <label><input type="checkbox" value="Programming"> Programming</label>
+            <label><input type="checkbox" value="Design"> Design</label>
+            <label><input type="checkbox" value="Marketing"> Marketing</label>
+            <label><input type="checkbox" value="Business"> Business</label>
+            <label><input type="checkbox" value="Data Science"> Data Science</label>
+        </div>
+        <button id="submit-interests-btn">Find Matches</button>
+    </div>
 
-                <label for="date">Preferred Date:</label>
-                <input type="date" id="date" name="date" required>
-
-                <label for="time">Preferred Time:</label>
-                <input type="time" id="time" name="time" required>
-
-                <button type="submit" class="cta-button">Schedule Coffee Chat</button>
-            </form>
-        </section>
-
-        <div class="spinner" id="loading-spinner"></div>
-    </main>
+    <!-- Matches Section -->
+    <div id="matches-section" class="matches-section hidden">
+        <h2>Individuals with Similar Interests</h2>
+        <div class="match-list">
+            <div class="match-card">
+                <p>Name: John Doe</p>
+                <p>Interests: Programming, Data Science</p>
+                <div class="time-slots">
+                    <label><input type="checkbox"> 10:00 AM</label>
+                    <label><input type="checkbox"> 02:00 PM</label>
+                </div>
+            </div>
+            <div class="match-card">
+                <p>Name: Jane Smith</p>
+                <p>Interests: Design, Marketing</p>
+                <div class="time-slots">
+                    <label><input type="checkbox"> 11:00 AM</label>
+                    <label><input type="checkbox"> 03:00 PM</label>
+                </div>
+            </div>
+            <div class="match-card">
+                <p>Name: Michael Brown</p>
+                <p>Interests: Business, Marketing</p>
+                <div class="time-slots">
+                    <label><input type="checkbox"> 09:00 AM</label>
+                    <label><input type="checkbox"> 01:00 PM</label>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 MochaMatch. All rights reserved.</p>
     </footer>
 
-    <script>
-        // Simple form submit event to trigger spinner animation
-        document.getElementById("coffee-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-            document.getElementById("loading-spinner").style.display = "block"; // Show spinner
-            setTimeout(function() {
-                document.getElementById("loading-spinner").style.display = "none"; // Hide spinner after 3 seconds
-                alert("Coffee Chat Scheduled!");
-            }, 3000); // Simulate network request
-        });
-    </script>
+    <script src="../backend/script.js"></script>
 </body>
 </html>
