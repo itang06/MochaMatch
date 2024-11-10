@@ -26,8 +26,10 @@ header {
 }
 
 header .logo {
-    width: 50px;
+    width: 200px;
     height: auto;
+    margin: -50px;
+    margin-bottom: -100px;
 }
 
 header h1 {
