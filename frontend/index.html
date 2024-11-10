@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mocha Match</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MochaMatch - Coffee Chat Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Home Page Section -->
-  <div class="home-container">
     <header>
-      <h1>Welcome to Mocha Match!</h1>
-      <p>Your go-to app for scheduling cofaaaaaaafee chats with friends and colleagues.</p>
+        <h1>Welcome to MochaMatch</h1>
+        <p>Schedule a coffee chat with your peers and get productive together!</p>
     </header>
+
     <main>
-      <button onclick="window.location.href='schedule.html'">Schedule Coffee Chat</button>
+        <div class="coffee-cup"></div>
+        
+        <section class="form-section">
+            <h2>Schedule Your Coffee Chat</h2>
+            <form id="coffee-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit" class="cta-button">Schedule Coffee Chat</button>
+            </form>
+        </section>
+
+        <div class="spinner" id="loading-spinner"></div>
     </main>
-  </div>
+
+    <footer>
+        <p>&copy; 2024 MochaMatch. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple form submit event to trigger spinner animation
+        document.getElementById("coffee-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("loading-spinner").style.display = "block"; // Show spinner
+            setTimeout(function() {
+                document.getElementById("loading-spinner").style.display = "none"; // Hide spinner after 3 seconds
+                alert("Coffee Chat Scheduled!");
+            }, 3000); // Simulate network request
+        });
+    </script>
 </body>
 </html>
