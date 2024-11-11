@@ -53,3 +53,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+// Wait for the DOM to load to ensure the button is available
+document.addEventListener('DOMContentLoaded', () => {
+    // Select the book button
+    const bookButton = document.querySelector('.book-button');
+  
+    // Add a click event listener to the book button
+    bookButton.addEventListener('click', () => {
+      startClinkingAnimation();
+    });
+  });

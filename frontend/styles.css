@@ -226,7 +226,6 @@ input[type="checkbox"] {
     transition: width 0.3s ease, height 0.3s ease; /* Smooth scaling */
 }
 
-
 .book-button {
     margin-left: auto;
 }
