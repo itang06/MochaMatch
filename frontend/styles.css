@@ -1,22 +1,22 @@
-/* Basic Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and Page Layout */
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #faf0e6; /* Light tan background */
-    color: #3e2b2b;  /* Dark coffee color for text */
+    background-color: #faf0e6; 
+    color: #3e2b2b; 
     text-align: center;
-    background-image: url('https://www.transparenttextures.com/patterns/coarse-grain.png'); /* Optional subtle texture */
+    background-image: url('https://www.transparenttextures.com/patterns/coarse-grain.png'); 
 }
 
-/* Header Styling */
+
 header {
-    background-color: #8e6e53; /* Rich coffee brown */
+    background-color: #8e6e53; 
     color: white;
     padding: 20px 0;
     display: flex;
@@ -42,7 +42,7 @@ header p {
     font-style: italic;
 }
 
-/* Popup Styling */
+
 .popup {
     position: fixed;
     top: 0;
@@ -56,7 +56,7 @@ header p {
 }
 
 .popup-content {
-    background-color: #fffaf0;  /* Light cream for popup */
+    background-color: #fffaf0;  
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -65,12 +65,12 @@ header p {
 }
 
 h2 {
-    color: #5f4b3b; /* Coffee bean brown */
+    color: #5f4b3b; 
 }
 
 /* Buttons */
 button {
-    background-color: #8e6e53; /* Rich coffee brown */
+    background-color: #8e6e53; 
     color: white;
     font-size: 18px;
     border: none;
@@ -82,14 +82,14 @@ button {
 }
 
 button:hover {
-    background-color: #6a4e35;  /* Darker brown when hovered */
-    transform: scale(1.05); /* Slight grow effect on hover */
+    background-color: #6a4e35;  
+    transform: scale(1.05); 
 }
 
-/* Interests Section */
+
 .interests-section {
     margin-top: 30px;
-    background-color: #fffaf0;  /* Light cream for interests section */
+    background-color: #fffaf0;  
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -113,10 +113,10 @@ button:hover {
     margin-bottom: 10px;
 }
 
-/* Matches Section */
+
 .matches-section {
     margin-top: 30px;
-    background-color: #fffaf0;  /* Light cream for matches section */
+    background-color: #fffaf0;  
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -133,7 +133,7 @@ button:hover {
 }
 
 .match-card {
-    background-color: #f5f5f5;  /* Light beige for each card */
+    background-color: #f5f5f5;  
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -153,7 +153,7 @@ button:hover {
 .match-card p {
     font-size: 1.1rem;
     margin-bottom: 10px;
-    color: #5f4b3b; /* Dark coffee brown text */
+    color: #5f4b3b;
 }
 
 .time-slots label {
@@ -163,29 +163,29 @@ button:hover {
     color: #3e2b2b;
 }
 
-/* Footer Styling */
+
 footer {
     margin-top: 50px;
     font-size: 0.9rem;
     color: #888;
-    background-color: #3e2b2b; /* Dark coffee footer */
+    background-color: #3e2b2b; 
     color: white;
     padding: 15px;
 }
 
-/* Add some rounded edges for the buttons and cards */
+/* round edges */
 button, .match-card {
     border-radius: 10px;
 }
 
-/* Hover Effects for Cards */
+/* hover effect */
 .match-card:hover {
     background-color: #f0e5d8;
     transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for the checkbox inputs */
+/* style for the checkbox inputs */
 input[type="checkbox"] {
     margin-right: 10px;
 }
@@ -193,37 +193,37 @@ input[type="checkbox"] {
 .select-interests-header {
     margin-bottom: 20px;
 }
-/* Progress Bar Container */
+/* progress bar container */
 .progress-container {
     width: 100%;
     background-color: #ddd;
     border-radius: 5px;
     overflow: hidden;
     height: 20px;
-    margin-top: 20px; /* Adjust to position it below other content */
+    margin-top: 20px; /* adjust to position it below other content */
 }
 
-/* Progress Bar Fill */
+/* progress bar filling */
 .progress-bar-fill {
     height: 100%;
-    width: 0%; /* Start with 0% */
-    background-color: #d4af37; /* Coffee color */
+    width: 0%; /* start at 0% */
+    background-color: #d4af37; /* coffee color */
     position: relative;
-    transition: width 0.3s ease; /* Smooth transition */
+    transition: width 0.3s ease; 
 }
 
-/* Progress Head (Logo) */
+/* Progress head with logo */
 .progress-head {
     position: absolute;
-    top: -10px; /* Adjust as needed to align properly */
+    top: -10px; 
     right: 0;
-    width: 40px; /* Initial size of the logo */
+    width: 40px; 
     height: 40px;
-    background-image: url('../assets/thumbnail_logo.png'); /* Logo image */
+    background-image: url('../assets/thumbnail_logo.png'); 
     background-size: cover;
     background-position: center;
-    border-radius: 50%; /* Circular shape */
-    transition: width 0.3s ease, height 0.3s ease; /* Smooth scaling */
+    border-radius: 50%; 
+    transition: width 0.3s ease, height 0.3s ease; 
 }
 .title-image {
     width: 500px;
@@ -236,27 +236,27 @@ input[type="checkbox"] {
     margin-right: 200px;
 }
 .match-card {
-    background-color: #f5f5f5;  /* Light beige for each card */
+    background-color: #f5f5f5;  
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column; /* Ensures content stacks vertically */
-    align-items: flex; /* Align the other items to the left */
-    justify-content: space-between; /* Space out the content */
-    position: relative; /* Ensures the button doesn't affect other elements' positioning */
+    flex-direction: column; 
+    align-items: flex; 
+    justify-content: space-between; 
+    position: relative; 
 }
 
 .match-card .book-button {
     margin-top: 10px;
-    margin-left: auto; /* Pushes the button to the right */
+    margin-left: auto; /* pushes button to the right */
 }
 
 
-/* Back Button Styling */
+/* back button */
 .back-button {
-    background-color: #8e6e53; /* Rich coffee brown */
+    background-color: #8e6e53; /*  coffee brown */
     color: white;
     font-size: 18px;
     border: none;
@@ -269,8 +269,8 @@ input[type="checkbox"] {
 }
 
 .back-button:hover {
-    background-color: #6a4e35;  /* Darker brown when hovered */
-    transform: scale(1.05); /* Slight grow effect on hover */
+    background-color: #6a4e35;  /* darker brown when hovered */
+    transform: scale(1.05); /* button grow on over */
 }
 
 #Michael {
@@ -295,13 +295,13 @@ input[type="checkbox"] {
     margin-left: -70px;
     margin-bottom: -200px;
 }
-/* Sidebar Styling */
+/* sidebar styling */
 #booking-sidebar {
-    position: fixed; /* Keeps it on the side even when scrolling */
-    top: 50px; /* Adjust as needed */
-    right: 20px; /* Adjust for left or right positioning */
-    width: 250px; /* Set the width of the sidebar */
-    background-color: #faf0e6; /* Background color */
+    position: fixed; /* keeps it on the side even when scrolling */
+    top: 50px; 
+    right: 20px; 
+    width: 250px; 
+    background-color: #faf0e6; 
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -314,7 +314,7 @@ input[type="checkbox"] {
     font-size: 1.5rem;
 }
 
-/* Booking List Styling */
+/* booking list styling */
 #booking-list {
     list-style-type: none;
     padding: 0;
@@ -332,7 +332,7 @@ input[type="checkbox"] {
 }
 
 #booking-list li button {
-    background-color: #8e6e53; /* Same as the book button */
+    background-color: #8e6e53; /* same as the book button */
     color: white;
     border: none;
     padding: 5px 10px;
@@ -341,7 +341,7 @@ input[type="checkbox"] {
 }
 
 #booking-list li button:hover {
-    background-color: #6a4e35; /* Darker brown on hover */
+    background-color: #6a4e35; /* dark brown on hover */
 }
 
 #johncat {
