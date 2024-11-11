@@ -17,7 +17,7 @@
     <header>
         <div class="container">
             <img src="../assets/thumbnail_logo.png" alt="MochaMatch Logo" class="logo">
-            <h1>MochaMatch</h1>
+            <img src="../assets/mochamatchtitle.png" alt="MochaMatch Title" class="title-image">
             <p>Your Coffee-Fueled Mentor/Mentee Match</p>
         </div>
     </header>
@@ -43,44 +43,61 @@
         </div>
         <button id="submit-interests-btn">Find Matches</button>
     </div>
+    <!-- Sidebar for Bookings -->
+    <aside id="booking-sidebar">
+        <h2>Your Bookings</h2>
+        <ul id="booking-list">
+            <!-- Bookings will appear here -->
+        </ul>
+    </aside>
 
-    <!-- Matches Section -->
-    <div id="matches-section" class="matches-section hidden">
-        <h2 class="select-interests-header">People with Similar Interests!</h2>
-        <div class="match-list">
-            <div class="match-card">
-                <img src="../assets/john_doe.jpg" alt="John Doe" class="profile-photo">
-                <p>Name: John Doe</p>
-                <p>Interests: Programming, Data Science</p>
-                <div class="time-slots">
-                    <label><input type="checkbox"> 10:00 AM</label>
-                    <label><input type="checkbox"> 02:00 PM</label>
+    <!-- Main Content -->
+    <div id="main-content">
+
+
+        <!-- Matches Section -->
+        <div id="matches-section" class="matches-section hidden">
+            <h2 class="select-interests-header">People with Similar Interests!</h2>
+            <div class="match-list">
+                <div class="match-card">
+                    <img src="../assets/john_doe.jpg" alt="John Doe" class="profile-photo" id="johncat">
+                    <p>Name: <strong>John Doe</strong></p>
+                    <p>Interests: Programming, Data Science</p>
+                    <div class="time-slots">
+                        <label><input type="checkbox"> 10:00 AM</label>
+                        <label><input type="checkbox"> 02:00 PM</label>
+                    </div>
+                    <a href="john_doe.html">
+                        <button class="book-button">Book</button>
+                    </a>
                 </div>
-                <button class="book-button">Book</button>
-            </div>
-            <div class="match-card">
-                <img src="../assets/jane_smith.jpg" alt="Jane Smith" class="profile-photo">
-                <p>Name: Jane Smith</p>
-                <p>Interests: Design, Marketing</p>
-                <div class="time-slots">
-                    <label><input type="checkbox"> 11:00 AM</label>
-                    <label><input type="checkbox"> 03:00 PM</label>
+                <div class="match-card">
+                    <img src="../assets/jane_smith.jpg" alt="Jane Smith" class="profile-photo" id="janecroissant">
+                    <p>Name: <strong>Jane Smith</strong></p>
+                    <p>Interests: Design, Marketing</p>
+                    <div class="time-slots">
+                        <label><input type="checkbox"> 11:00 AM</label>
+                        <label><input type="checkbox"> 03:00 PM</label>
+                    </div>
+                    <a href="jane_smith.html">
+                        <button class="book-button">Book</button>
+                    </a>
                 </div>
-                <button class="book-button">Book</button>
-            </div>
-            <div class="match-card">
-                <img src="../assets/Michael_Brown.png" alt="Michael Brown" class="profile-photo">
-                <p>Name: Michael Brown</p>
-                <p>Interests: Business, Marketing</p>
-                <div class="time-slots">
-                    <label><input type="checkbox"> 09:00 AM</label>
-                    <label><input type="checkbox"> 01:00 PM</label>
+                <div class="match-card">
+                    <img src="../assets/Michael_Brown.png" alt="Michael Brown" class="profile-photo" id="michaelcoffee">
+                    <p>Name: <strong>Michael Brown</strong></p>
+                    <p>Interests: Business, Marketing</p>
+                    <div class="time-slots">
+                        <label><input type="checkbox"> 09:00 AM</label>
+                        <label><input type="checkbox"> 01:00 PM</label>
+                    </div>
+                    <a href="michael_brown.html">
+                        <button class="book-button">Book</button>
+                    </a>
                 </div>
-                <button class="book-button">Book</button>
             </div>
         </div>
     </div>
-
     <footer>
         <p>&copy; 2024 MochaMatch. All rights reserved.</p>
     </footer>
@@ -90,7 +107,7 @@
             <div class="progress-head" id="progress-head"></div>
         </div>
     </div>
-    
+
     <script src="../backend/script.js"></script>
 
 </body>
