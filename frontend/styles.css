@@ -284,9 +284,12 @@ input[type="checkbox"] {
     border-radius: 50%;
 }
 #John {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
+    margin: -150px;
+    margin-left: -70px;
+    margin-bottom: -200px;
 }
 /* Sidebar Styling */
 #booking-sidebar {
@@ -335,4 +338,12 @@ input[type="checkbox"] {
 
 #booking-list li button:hover {
     background-color: #6a4e35; /* Darker brown on hover */
+}
+
+#johncat {
+    height: 300px;
+    width: 400px;
+    margin: -100px;
+    margin-bottom: -120px;
+    margin-right: -150px;
 }
